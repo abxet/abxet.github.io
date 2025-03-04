@@ -1,0 +1,249 @@
+/*Adjusting Body*/
+body{
+    margin: 0;
+    font-family: Arial;
+    transition: 0.3s;
+    background: url('/img.jpg');
+    background-repeat: round;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: auto;
+    overflow-y: visible;
+}
+/*Creating Header*/
+.header{
+    width: 97%;
+    height: 60px;
+    padding: 20px;
+    background: url('/img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+}
+/*Logo*/
+.header #logo{
+    
+    font-size: 50px;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    display: inline-block;
+    
+}
+/*links*/
+.header a{
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    
+}
+
+/*Link hover design*/
+.header a:hover{
+    font-weight: bolder;
+}
+
+/*optons*/
+#options{
+    position: absolute;
+    right: 20px;
+    display: inline;
+    
+}
+/*underline effect*/
+#options a::before{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    position: absolute;
+    top: 25px;
+    transition: width 0.3s;
+    
+    
+    
+}
+
+/*Link Hover*/
+#options a:hover::before{
+    display: inline-block;
+    width: 100%;
+    
+    
+}
+
+/*Active*/
+#options a:focus::before{
+    display: inline-block;
+    width: 100%;
+    
+    
+}
+
+/*The Main content*/
+h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+/*paragraph*/
+p{
+    color: white;
+    text-align: center;
+}
+/*Welcome*/
+.welcome h1{
+    font-size: 100px;
+    padding: 70px;
+    height: 280px;
+    
+}
+
+
+/**/
+
+
+.footer{
+    
+    height: 550px;
+    opacity: 70%;
+    background-color: #2f102c;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* main-conent*/
+    
+#main-content{
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.2); 
+  
+  color: white;
+  font-weight: bold;
+  
+
+/* now center the mask*/
+  
+  
+  
+  
+  
+  padding: 20px;
+  text-align: center;
+}
+    
+
+
+
+
+/**/
+
+input{
+    
+
+    background-color: white;
+    padding: 2px;
+    border-radius: 4px;
+    opacity: 50%;
+    border: 0px;
+    position: absolute;
+    top: auto;
+    height: 30px;
+    display: inline-block;
+    width: 100%;
+    transition: 0.3s;
+    border-bottom: 3px;
+    border-color: white;
+}
+/**/
+
+
+input:hover{
+    border-bottom: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    border-left-style: none;
+    border-radius: 4px;
+}
+
+input:focus {
+    border: 0px;
+    outline: none;
+    border-bottom: 4px;
+    border-bottom-color: white;
+    
+    border-radius: 0px;
+    
+}
+
+
+#input{
+        margin-left: 100px;
+    margin-right: 100px;
+    position: absolute;
+    top: auto;
+    height: 30px;
+    display: inline-block;
+    width: 50%;
+    padding: 1px;
+    
+}
+
+
+#input::before{
+    
+    
+    content:'';
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    position: absolute;
+    top: 32px;
+    transition: width 0.7s;
+    z-index: 1;
+    
+    
+}
+
+
+
+ #input:hover::before{
+    
+    width: 100%;
+    
+    
+}
+
+
+#input:focus::before{
+    
+    width: 100%;
+    
+    
+}
+
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
