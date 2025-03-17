@@ -3,111 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abxet</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            height: 60px;
-            background: rgba(0, 0, 255, 0.5); /* Translucent blue effect */
-            backdrop-filter: blur(10px);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-            z-index: 1000;
-        }
-        .logo {
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .search-container {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .search-bar {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 200px;
-            background: white;
-            padding: 5px;
-            border-radius: 5px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .search-bar input {
-            width: 100%;
-            padding: 5px;
-            border: none;
-            border-radius: 5px;
-        }
-        .search-icon {
-            cursor: pointer;
-            color: white;
-            font-size: 20px;
-        }
-        .content {
-            margin-top: 80px;
-            padding: 20px;
-            text-align: center;
-        }
-        .footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            height: 40px;
-            background: #222;
-            color: white;
-            text-align: center;
-            line-height: 40px;
-        }
-        @media (max-width: 600px) {
-            .header {
-                flex-direction: row;
-            }
-            .search-bar {
-                width: 150px;
-            }
-        }
-    </style>
-    <script>
-        function toggleSearch() {
-            var searchBar = document.getElementById("searchBar");
-            if (searchBar.style.display === "none" || searchBar.style.display === "") {
-                searchBar.style.display = "block";
-            } else {
-                searchBar.style.display = "none";
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <title>Portfolio</title>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">abxet</div>
-        <div class="search-container">
-            <span class="search-icon" onclick="toggleSearch()">🔍</span>
-            <div class="search-bar" id="searchBar">
-                <input type="text" placeholder="Search...">
-            </div>
-        </div>
-    </div>
-    <div class="content">
-        <h1>Welcome to the Website</h1>
-        <p>Enjoy the header and footer with a search feature!</p>
-    </div>
-    <div class="footer">welcome to my website</div>
+    <header>
+        <h4>abxet.github.io</h4>
+        <nav>
+            <ul>
+                <li><a class="nav" href="#contacts">CONTACT</a></li>
+
+            </ul>
+        </nav>
+    </header>
+        <section id="topic">
+            <h1>HI!</h1>
+            <H1>I AM ABHIJEET.</H1>
+            <p>an aspiring web developer</p>
+        </section>
+    
+        <section>
+            <h1>Introduction</h1>
+            <p>
+                I am a passionate Computer Science and Engineering student 
+                with a strong interest in software development, 
+                problem-solving, and emerging technologies. 
+                My academic journey has equipped me with 
+                a solid foundation in programming, data structures, 
+                and algorithms, while my hands-on projects 
+                have helped me explore web development and 
+                databases. 
+                I enjoy working on real-world applications, 
+                optimizing code efficiency, and staying 
+                up-to-date with the latest advancements in technology. 
+                I am eager to learn and build impactful software solutions.
+            </p>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <section class="project">
+                        <img id="1" src="calk.png" alt="Calculator">
+                        <h3>Calk</h3>
+                        <p>
+                            A simple calculator web application built using React. 
+                            The calculator can perform basic arithmetic operations 
+                            such as addition, subtraction, multiplication, and division.
+                        </p>
+                    </section>
+
+                </li>
+                <li>
+                    <section class="project">
+                        <img src="zephyr.png" alt="Weather">
+                        <h3>
+                            Zephyr
+                        </h3>
+                        
+                        <p>
+                            A weather application that provides real-time weather 
+                            information for a given location. The application 
+                            displays the temperature, humidity, and wind speed 
+                            for the location.
+                        </p>
+                    </section>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Skills</h2>
+           <dl>
+                <dt>HTML5</dt>
+                <dd>Proficient in structuring web pages using semantic HTML to ensure accessibility and SEO optimization.</dd>
+
+                <dt>CSS3</dt>
+                <dd>Skilled in styling web pages with CSS, including Flexbox, Grid, animations, and responsive design </dd>
+
+                <dt>JavaScript</dt>
+                <dd>Experienced in building dynamic and interactive web applications using vanilla JavaScript, with knowledge of ES6+ features.</dd>
+
+                <dt>C/C++</dt>
+                <dd>Strong foundation in programming fundamentals, data structures, and algorithms, with experience in competitive programming and system-level coding.</dd>
+           </dl>
+        </section>
+        <section class="contact">
+            <h2 id="contacts">contacts</h2>
+            <p><a href="https://github.com/abxet/">Github</a></p>
+        </section>
 </body>
 </html>
