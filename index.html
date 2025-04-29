@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+      
     <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <h4>abxet.github.io</h4>
         <nav>
-            <ul>
-                <li><a class="nav" href="#contacts">CONTACT</a></li>
-
-            </ul>
+                <a class="nav" href="#skills"><i id="s" class="fa-solid fa-briefcase"> </i><i class="ii"> Skills</i></a>
+                <a class="nav" href="#project"><i id="p" class="fa-solid fa-code"> </i> <i class="ii">Projects</i></a>
+                <a class="nav" href="#contacts"><i id="c" class="fa-solid fa-address-book"> </i> <i class="ii">Contacts</i></a>
         </nav>
     </header>
         <section id="topic">
@@ -24,28 +26,30 @@
             <p>an aspiring web developer</p>
         </section>
     
-        <section>
+        <section id="about">
             <h1>Introduction</h1>
             <p>
-                I am a passionate Computer Science and Engineering student 
+
+                I am a passionate Computer Science and Engineering student
                 with a strong interest in software development, 
                 problem-solving, and emerging technologies. 
                 My academic journey has equipped me with 
                 a solid foundation in programming, data structures, 
                 and algorithms, while my hands-on projects 
                 have helped me explore web development and 
-                databases. 
+                databases.
                 I enjoy working on real-world applications, 
                 optimizing code efficiency, and staying 
                 up-to-date with the latest advancements in technology. 
                 I am eager to learn and build impactful software solutions.
             </p>
+            
         </section>
-        <section>
+        <section id="project">
             <h2>Projects</h2>
             <ul>
                 <li>
-                    <section class="project">
+                    <section class="project" id="p1">
                         <img id="1" src="calk.png" alt="Calculator">
                         <h3>Calk</h3>
                         <p>
@@ -53,6 +57,14 @@
                             The calculator can perform basic arithmetic operations 
                             such as addition, subtraction, multiplication, and division.
                         </p>
+
+                        <div class="tag"><i class="fa-brands fa-react"></i> React</div>
+                        <div class="tag"><i class="fa-brands fa-css3-alt"> </i> CSS</div>
+                        <div class="tag"><i class="fa-brands fa-js"></i> JavaScript</div>
+                        <br>
+                        <button class="btn" id="btn1" onclick="document.location='https://abxet.github.io/calk/'"><i class="fa-solid fa-arrow-up-right-from-square"></i> View</button>
+                        
+                        <button class="btn" onclick="document.location='https://github.com/abxet/calk.git'"><i class="fa-solid fa-code"></i> Code</button>
                     </section>
 
                 </li>
@@ -69,29 +81,35 @@
                             displays the temperature, humidity, and wind speed 
                             for the location.
                         </p>
+                        <div class="tag"><i class="fa-brands fa-react"></i> React</div>
+                        <div class="tag"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+                        <br>
+                        <button class="btn" id="btn2" onclick="document.location='https://abxet.github.io/zephyr/'"><i class="fa-solid fa-arrow-up-right-from-square"></i> View</button>
+                        
+                        <button class="btn" onclick="document.location='https://github.com/abxet/calk.git'"><i class="fa-solid fa-code"></i> Code</button>
                     </section>
                 </li>
             </ul>
         </section>
-        <section>
+        <section id="skills">
             <h2>Skills</h2>
            <dl>
-                <dt>HTML5</dt>
+                <dt><i class="fa-brands fa-html5"></i> HTML5</dt>
                 <dd>Proficient in structuring web pages using semantic HTML to ensure accessibility and SEO optimization.</dd>
 
-                <dt>CSS3</dt>
+                <dt><i class="fa-brands fa-css3-alt"></i> CSS3</dt>
                 <dd>Skilled in styling web pages with CSS, including Flexbox, Grid, animations, and responsive design </dd>
 
-                <dt>JavaScript</dt>
+                <dt><i class="fa-brands fa-js"></i> JavaScript</dt>
                 <dd>Experienced in building dynamic and interactive web applications using vanilla JavaScript, with knowledge of ES6+ features.</dd>
 
-                <dt>C/C++</dt>
+                <dt><i class="devicon-cplusplus-plain"></i> C/C++</dt>
                 <dd>Strong foundation in programming fundamentals, data structures, and algorithms, with experience in competitive programming and system-level coding.</dd>
            </dl>
         </section>
         <section class="contact">
             <h2 id="contacts">contacts</h2>
-            <p><a href="https://github.com/abxet/">Github</a></p>
+            <p><i class="fa-brands fa-github"></i> <a href="https://github.com/abxet/">Github</a></p>
         </section>
 </body>
 </html>
